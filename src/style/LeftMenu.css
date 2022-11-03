@@ -25,14 +25,13 @@ transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 .searchbox{
     width: 100%;
-    height:40px;
+    height:35px;
     position: relative;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 2px;
     color: rgb(37, 39, 39);
-    border-radius: 10px;
+    border-radius: 5px;
 
-  
 }
 .searchbox input{
     width: 100%;
@@ -51,30 +50,32 @@ transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
     left: 0;
     color: rgb(63, 64, 64);
     width: 45px;
-    height: 40px;
+    height: 35px;
     text-align: center;
-    line-height: 45px;
+    line-height: 35px;
     font-size: 20px;
 }
 .MenuContainer{
-    margin:15px 0;
+    margin:10px 0;
 
 }
 .MenuContainer .title{
     color: grey;
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     margin-left: 10px;
 }
 .MenuContainer .ul {
     width: 100%;
     padding: 0;
+    
 }
 .MenuContainer ul li{
     list-style: none;
-    margin: 5px 0;
+    margin: 2px 0;
+    margin-left: 0;
     width: 100%;
     padding: 2px 0px;
     position: relative;
@@ -115,7 +116,7 @@ transition: 0.3s;
 }
 .playlistContainer{
     cursor: pointer;
-  margin:10px 10px;
+  margin:5px 10px;
   
 
 }
@@ -127,7 +128,7 @@ transition: 0.3s;
     color:grey ;
 }
 .playlistContainer .nameContainer p{
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
 
@@ -135,7 +136,9 @@ transition: 0.3s;
 .playlistContainer .nameContainer i{
     cursor: pointer;
     color: #f1f1f1;
-    margin-left: 8px;
+    margin-left: 4px;
+    font-size: 16px;
+    margin-top: 0;
 }
 .playlistContainer .playlistScroll{
     height: 98px;
@@ -147,7 +150,8 @@ transition: 0.3s;
     display: flex;
     align-items: center;
     color:rgb(129, 124, 124);
-    margin: 8px;
+    
+    margin: 4px 8px;
 }
 .playlistContainer .playlistScroll .play:hover{
     color: #f1f1f1;
@@ -170,7 +174,7 @@ margin-right: 7px;
 }
 .tracklist{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top:8px ;
+    padding-top:2px ;
 }
 .tracklist .top{
     display: flex;
@@ -194,7 +198,7 @@ margin-right: 7px;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #848484;
 }
 .tracklist .bottom i{

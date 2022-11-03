@@ -5,8 +5,8 @@ import {playlist} from "./playlist";
 function MenuPlaylist() {
   return (
     <div className='playlistContainer'>
-      <div className='nameContainer'>
-        <p>Playlist</p>
+      <div className='nameContainer' >
+        <p >Playlist</p>
         <i>
             <FaPlus/>
         </i>

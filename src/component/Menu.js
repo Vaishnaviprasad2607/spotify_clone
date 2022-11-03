@@ -15,7 +15,7 @@ function changeMenuActive(){
   return (
     <div className='MenuContainer'>
       <p className='title'>{title}</p>
-      <ul>
+      <ul style={{padding:'0px'}}>
         {
           menuobj && menuobj.map((menu)=>(
             <li key={menu.id}>

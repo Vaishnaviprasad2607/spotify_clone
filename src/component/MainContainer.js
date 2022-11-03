@@ -1,6 +1,7 @@
 import React from 'react';
 import "../style/MainContainer.css";
 
+
 import {Banner} from "./Banner";
 
 function MainContainer() {
