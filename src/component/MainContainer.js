@@ -4,6 +4,11 @@ import { FaUsers } from 'react-icons/fa';
 import { FaPlayCircle } from 'react-icons/fa';
 import {Banner} from "./Banner";
 import Track from "../simg/night.jpg";
+import subah from "../simg/subah.jpg";
+import kantara from "../simg/kantara.webp";
+import sanam from "../simg/sanam.jpg";
+import selena from "../simg/selena.jpg";
+
 
 
 function MainContainer() {
@@ -39,33 +44,28 @@ function changeMenuActive(){
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
+      <img src={subah} alt=''style={{width:'40px',height:'40px'}}></img>
+      <span>Subahnallah</span>
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
+      <img src={kantara} alt=''></img>
+      <span>Kantara</span>
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
+      <img src={sanam} alt=''></img>
+      <span>Sanam</span>
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
+      <img src={selena} alt=''></img>
+      <span>Who says</span>
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
-      <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
-      </div>
-      <div className='songList'>
-      <img src={Track} alt=''></img>
-      <span>Night Changes</span>
+      <img src={kantara} alt=''></img>
+      <span>Singara Siriya</span>
       <span className='songplay'><span className='timestamp'>05:34 <i><FaPlayCircle/></i></span></span>
       </div>
       </div>
