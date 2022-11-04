@@ -1,5 +1,6 @@
 .mainMenu{
     height: 100vh;
+    width:1px;
     z-index: 1;
     flex-grow:1 ;
     background: rgba(34, 34, 34, 0.6);
@@ -96,6 +97,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
+    margin: 4px;
   }
   .songList{
     border: 2px solid #2c2c2c;
@@ -128,3 +130,44 @@ border-radius: 34px;
     cursor: pointer;
    
   }
+ .mainMenu .bottom{
+  margin: 5px;
+  position: sticky;
+  height:55px;
+  background-color: black;
+  color: white;
+ }
+ .mainMenu .bottom input{
+  background-color: blue;
+ }
+ .mainMenu #bar{
+  width: 71vw;
+margin: 4px;
+cursor: pointer;
+ }
+ .mainMenu .icons{
+  justify-content: center;
+  display: flex;
+  
+ }
+ .mainMenu .icons i{
+  padding: 0 5px;
+  cursor: pointer;
+ }
+ .mainMenu .songinfo{
+  position: absolute;
+  left:0;
+  display: flex;
+  font-family: Verdana,sans-serif;
+
+ }
+ .mainMenu .songinfo img{
+ opacity: 0;
+ transition: opacity 1s ease-in;
+  width: 50px;
+  height: 20px;
+  left: 10px;
+  padding: 0 2x;
+  margin-left: 8px;
+  margin-right: 8px;
+ }
