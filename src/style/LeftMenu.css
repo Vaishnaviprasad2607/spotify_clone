@@ -61,7 +61,7 @@ transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 .MenuContainer .title{
     color: grey;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -159,9 +159,12 @@ transition: 0.3s;
 }
 .playlistContainer .playlistScroll .play i{
     font-size: 18px;
+    padding: 0;
+    margin-left: 1px;
 }
 .playlistContainer .playlistScroll .play .list{
 margin-right: 7px;
+
 }
 .playlistContainer .playlistScroll .play .trash{
     margin-left: auto;

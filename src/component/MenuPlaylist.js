@@ -18,7 +18,7 @@ function MenuPlaylist() {
          <i className='list'>
             <BsMusicNoteList/>
          </i>
-         <p>{list.name}</p>
+         <p >{list.name}</p>
 <i className='trash'>
     <BsTrash/>
 </i> </div>

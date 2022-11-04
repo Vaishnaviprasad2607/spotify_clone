@@ -3,14 +3,14 @@
     z-index: 1;
     flex-grow:1 ;
     background: rgba(34, 34, 34, 0.6);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 .banner{
     height: 300px;
     position: relative;
 }
-.banner {
+.banner  {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,112 @@
     object-fit: fill;
     border: 1px solid rgb(28, 27, 25);
     padding: auto;
-    
-  
 }
+ .menuList {
+   
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background: #2c2c2c;
+  height:35px;
+    
+  }
+  
+  .menuList ul {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+   
+  }
+  
+  .menuList ul li {
+    list-style: none;
+    margin: 0 30px;
+   
+    position: relative;
+  }
+  
+  .menuList ul li a {
+    text-decoration: none;
+    color: #848484;
+  }
+  
+  .menuList ul li::before {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 10px;
+    width: 0px;
+    height: 5px;
+    border-radius: 5px;
+    background:#f1f1f1;
+  }
+  
+   .menuList ul li:hover::before,
+ .menuList ul li.active::before {
+    width: 20px;
+    transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+ .menuList ul li:hover a,
+ .menuList ul li.active a {
+    color: #f1f1f1;
+    transition: 0.3s ease;
+  }
+  
+ .menuList p {
+    color: #f1f1f1;
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  
+  .menuList p i {
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  
+  .menuList p span {
+    margin-left: 6px;
+    color: #848484;
+    margin-left: 6px;
+  }
+  .addsong{
+    height: 165px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .songList{
+    border: 2px solid #2c2c2c;
+height: 45px;
+display: flex;
+color: #939090;
+width: 98%;
+margin: 8px 0;
+justify-content: space-between;
+align-items: center;
+border-radius: 34px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .songList img{
 
+    width: 40px;
+    margin:0 23px ;
+    border-radius: 34px;
+  }
+  .timestamp{
+    margin: 0 23px;
+    font-size: 16px;
+   
+   
+  }
+  .timestamp i{
+    font-size: 25px;
+    cursor: pointer;
+   
+  }

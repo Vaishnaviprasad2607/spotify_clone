@@ -6,7 +6,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Banner() {
   return (
-    <div className='banner'>
+    <div className='banner'style={{height:'300px'}}>
       <Carousel>
       <Carousel.Item>
         <img
