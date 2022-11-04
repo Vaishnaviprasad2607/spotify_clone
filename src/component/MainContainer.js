@@ -37,6 +37,7 @@ function changeMenuActive(){
      
     </ul>
     <p ><i><FaUsers/></i> 12.3M <span>Followers</span></p>
+   
    </div>
    <div className='addsong'>
       <div className='songList'>
