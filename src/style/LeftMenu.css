@@ -1,0 +1,291 @@
+.leftMenu{
+width:260px;
+height: 100%;
+z-index: 1;
+min-height: 100vh;
+background: rgba(34, 34,34, 0.6);
+backdrop-filter:blur(10px) ;padding: 20px 1px;
+overflow: hidden;
+transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+.leftMenu .logocontainer{
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+}
+.leftMenu .logocontainer i{
+    font-size: 30px;
+}
+.leftMenu .logocontainer i:nth-child(3){
+    font-size: 20px;
+}
+.searchbox{
+    width: 100%;
+    height:40px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    color: rgb(37, 39, 39);
+    border-radius: 10px;
+
+  
+}
+.searchbox input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 45px;
+    color: #f1f1f1;
+    font-size: 15px;
+    font-weight: bold;
+}
+.searchbox  .sicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(63, 64, 64);
+    width: 45px;
+    height: 40px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+.MenuContainer{
+    margin:15px 0;
+
+}
+.MenuContainer .title{
+    color: grey;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.MenuContainer .ul {
+    width: 100%;
+    padding: 0;
+}
+.MenuContainer ul li{
+    list-style: none;
+    margin: 5px 0;
+    width: 100%;
+    padding: 2px 0px;
+    position: relative;
+}
+.MenuContainer ul li a{
+text-decoration: none;
+color: rgb(129, 124, 124);
+display: flex;
+align-items: center;
+font-size: 16px;
+}
+.MenuContainer ul li i{
+    font-size: 16px;
+    margin-right: 7px;
+    margin-left: 10px;
+}
+.MenuContainer ul li::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 0px;
+    height: 80%;
+    background: rgb(129, 209, 10);
+    border-radius: 5px;
+
+}
+.MenuContainer ul li:hover::before,
+.MenuContainer ul li.active::before
+{
+    width: 4px;
+    transition: 0.3s;
+}
+.MenuContainer ul li:hover a,
+.MenuContainer ul li.active a
+{
+color: aliceblue;
+transition: 0.3s;
+}
+.playlistContainer{
+    cursor: pointer;
+  margin:10px 10px;
+  
+
+}
+.playlistContainer .nameContainer{
+    display:flex;
+    margin-bottom: 5px;
+    justify-content: spaace-between;
+    align-items: center;
+    color:grey ;
+}
+.playlistContainer .nameContainer p{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.playlistContainer .nameContainer i{
+    cursor: pointer;
+    color: #f1f1f1;
+    margin-left: 8px;
+}
+.playlistContainer .playlistScroll{
+    height: 98px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+.playlistContainer .playlistScroll .play{
+    display: flex;
+    align-items: center;
+    color:rgb(129, 124, 124);
+    margin: 8px;
+}
+.playlistContainer .playlistScroll .play:hover{
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+.playlistContainer .playlistScroll .play i{
+    font-size: 18px;
+}
+.playlistContainer .playlistScroll .play .list{
+margin-right: 7px;
+}
+.playlistContainer .playlistScroll .play .trash{
+    margin-left: auto;
+}
+.playlistContainer .playlistScroll .play p{
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline;
+}
+.tracklist{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top:8px ;
+}
+.tracklist .top{
+    display: flex;
+    align-items: center;
+}
+.tracklist .top img{
+    width: 35px !important ;
+    height: 35px;
+}
+.tracklist .top .trackname{
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+.tracklist .top .trackname .trackspan{
+    display: block;
+    font-size: 12px;
+    color: #848484;
+}
+.tracklist .bottom{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #848484;
+}
+.tracklist .bottom i{
+    font-size: 18px;
+}
+.tracklist .bottom i:hover{
+    color: #f1f1f1;
+    transform: 0.3s;
+    cursor: pointer;
+}
+.tracklist .bottom input{
+    position: relative;
+    height: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    appearance: none;
+}
+/*chrome& safari*/
+.tracklist .bottom input::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background:rgb(129, 209, 10) ;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: width 250ms linear;
+}
+.tracklist .bottom input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    border: 2px solid #000;
+    cursor: pointer;
+    position: relative;
+    margin: -2px 0 0 0;
+    z-index: 3;
+    box-sizing: border-box;
+    transition: all 250ms linear;
+
+
+}
+/*firefox*/
+.tracklist .bottom input ::-moz-progress-bar{
+    background:rgb(129, 209, 10) ;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: width 250ms linear;
+}
+.tracklist .bottom input ::-moz-range-thumb{
+    background:rgb(129, 209, 10) ;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    transition: width 250ms linear;
+    
+}
+
+@media screen and (max-width :550px){
+    .leftMenu{
+        width: 64px;
+        min-width: 64px;
+    }
+    .leftMenu .searchbox{
+        display: none;
+    }
+    .leftMenu .tracklist{
+        display: none;
+    }
+    .leftMenu .playlistContainer{
+        display: none;
+    }
+    .leftMenu .MenuContainer ul li a span 
+    {
+        display: none;
+
+    }
+    .leftMenu .MenuContainer ul li{
+        margin: 25px 0;
+    }
+    .leftMenu .logocontainer h2{
+        margin-left:24px ;
+
+    }
+}
