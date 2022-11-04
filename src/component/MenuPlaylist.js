@@ -6,10 +6,10 @@ function MenuPlaylist() {
   return (
     <div className='playlistContainer'>
       <div className='nameContainer' >
-        <p >Playlist</p>
-        <i>
+        <p >Playlist<i>
             <FaPlus/>
-        </i>
+        </i></p>
+        
       </div>
       <div className='playlistScroll'>
         {
