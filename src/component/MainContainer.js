@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import "../style/MainContainer.css"
 import { FaUsers } from 'react-icons/fa';
 import { FaPlayCircle } from 'react-icons/fa';
+
 import {IoPlayForward } from 'react-icons/io5'
 import {IoPlayBack } from 'react-icons/io5'
 import {Banner} from "./Banner";
@@ -11,7 +12,9 @@ import kantara from "../simg/kantara.webp";
 import sanam from "../simg/sanam.jpg";
 import selena from "../simg/selena.jpg";
 import gif from "../simg/playing.gif";
-<script src='public\script.js'></script>
+import playaudio from './script';
+
+
 function MainContainer() {
   useEffect(()=> {
     const allLi =document
@@ -75,15 +78,15 @@ function changeMenuActive(){
         <input type={'range'} id={'bar'} min='0' max="100"></input>
         <div className='icons'>
         <i><IoPlayBack size={'30px'}/></i>
-          <i><FaPlayCircle id={'masterPlay'} size={'30px'}/></i>
+          <i><FaPlayCircle size={'30px'} onClick={playaudio}/></i>
           <i><IoPlayForward size={'30px'}/></i>
           <div className='songinfo'> 
         <img src={gif}>
           </img><p>Night changes</p></div>
       </div>
-     
+
         </div>
-      
+ 
     </div>
   );
   
